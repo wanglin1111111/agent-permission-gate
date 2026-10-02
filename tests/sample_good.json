@@ -1,0 +1,35 @@
+{
+  "scope": {
+    "touches_real_repo": true,
+    "touches_secrets": true,
+    "worth_deploy": true
+  },
+  "sandbox": {
+    "empty_verified": true,
+    "small_project_trio": true
+  },
+  "policy": {
+    "read_dirs": ["repo/src", "repo/tests"],
+    "write_dirs": ["repo/src"],
+    "domains": ["registry.npmjs.org", "api.github.com"],
+    "file_mode": "hard_requirement",
+    "no_wildcards": true,
+    "grained_rule": true
+  },
+  "credentials": {
+    "all_via_provider": true,
+    "none_in_env_files_prompts": true,
+    "leaked_keys_rotated": true,
+    "endpoint_declared": true
+  },
+  "approval": {
+    "auto_approve": false,
+    "policy_advisor_auto": false,
+    "observation_period_done": true,
+    "observation_log_exists": true
+  },
+  "discipline": {
+    "output_is_draft": true,
+    "k8s_networkpolicy_tested": false
+  }
+}

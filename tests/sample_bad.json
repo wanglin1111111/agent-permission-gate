@@ -1,0 +1,35 @@
+{
+  "scope": {
+    "touches_real_repo": true,
+    "touches_secrets": true,
+    "worth_deploy": true
+  },
+  "sandbox": {
+    "empty_verified": false,
+    "small_project_trio": false
+  },
+  "policy": {
+    "read_dirs": [],
+    "write_dirs": ["repo/*"],
+    "domains": ["0.0.0.0/0"],
+    "file_mode": "best_effort",
+    "no_wildcards": false,
+    "grained_rule": false
+  },
+  "credentials": {
+    "all_via_provider": false,
+    "none_in_env_files_prompts": false,
+    "leaked_keys_rotated": false,
+    "endpoint_declared": false
+  },
+  "approval": {
+    "auto_approve": true,
+    "policy_advisor_auto": false,
+    "observation_period_done": true,
+    "observation_log_exists": false
+  },
+  "discipline": {
+    "output_is_draft": false,
+    "k8s_networkpolicy_tested": true
+  }
+}
